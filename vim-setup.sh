@@ -20,7 +20,7 @@ git clone https://github.com/powerline/fonts && ./fonts/install.sh
 #conf file for c++ with compiling arguments
 
 mv .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
-./.vim/bundle/YouCompleteMe/install.py --clang-completer
+./~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 
 #In my account have one .vimrc with some plugins and cool settings, feel free to use it
 #now you are free to install any shit you want
