@@ -24,5 +24,5 @@ mv .ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py
 
 #In my account have one .vimrc with some plugins and cool settings, feel free to use it
 #now you are free to install any shit you want
-
+#Please, do this line above for perfect fit in your envinronment (aka install)
 echo 'now you need to exec vim and type the following command :PluginInstall'
