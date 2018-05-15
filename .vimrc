@@ -32,6 +32,7 @@ syntax enable
 colorscheme default
 
 " ---- Vundle initialization ----
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
