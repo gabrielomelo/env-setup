@@ -1,3 +1,11 @@
+# -----------------------------------------------------
+# Author: Gabriel Melo
+# Github: gabrielomelo
+# Vim Configuration Script
+# -----------------------------------------------------
+
+
+
 #the files will be moved for your home directory
 
 #pasting the .vimrc file on your home directory
