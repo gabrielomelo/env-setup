@@ -1,9 +1,22 @@
+" ------------------------------------------------------------
+"
+"       Author: Gabriel Melo
+"       Github: gabrielomelo
+"
+"       This is only a custom configuration file for vim.
+"       Some plugins above are compiled, see the documentation
+"       for more intructions.
+"
+"       Enjoy!
+"
+" -------------------------------------------------------------
+
 " ---- vim settings ----
 
 set nocompatible
 set encoding=utf8
 
-" ---- tab options ----
+" ---- Editor Behavior  Configuration ----
 
 set autoindent
 set tabstop=8
@@ -12,12 +25,13 @@ set expandtab
 set shiftwidth=4
 set smarttab
 set showcmd
+set background=dark
+set hidden
 
 syntax enable
 colorscheme default
-filetype off
 
-" ---- vundle settings
+" ---- Vundle initialization ----
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -25,19 +39,26 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ---- Plugins ----
 
+Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 
-" ---- Plugin Configuration ----
-
-map <C-n> :NERDTreeToggle<CR>
+" ---- Global Definitions  ----
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
+" ---- Key Bindings ----
+
+map <C-n> :NERDTreeToggle<CR>
+map <C-e> :split<CR>
+map <C-o> :vsplit<CR>
+map <C-t> :tabnew<CR>
+
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 call vundle#end()
 filetype plugin indent on
