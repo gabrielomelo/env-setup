@@ -20,13 +20,15 @@ set encoding=utf8
 
 set autoindent
 set tabstop=8
-set softtabstop=0 
+set softtabstop=0
+set mouse=a
 set expandtab
 set shiftwidth=4
 set smarttab
 set showcmd
 set background=dark
 set hidden
+set number
 
 syntax enable
 colorscheme default
@@ -54,8 +56,8 @@ let g:airline_powerline_fonts = 1
 " ---- Key Bindings ----
 
 map <C-n> :NERDTreeToggle<CR>
-map <C-e> :split<CR>
-map <C-o> :vsplit<CR>
+map <C-o> :split<CR>
+map <C-e> :vsplit<CR>
 map <C-t> :tabnew<CR>
 
 nnoremap <C-Left> :tabprevious<CR>
