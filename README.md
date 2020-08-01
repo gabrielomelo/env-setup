@@ -1,9 +1,5 @@
 # vim-setup
 
-This repo contains my personal vim configuration on fedora.
+This repo contains my personal vim and linux terminal configuration on Fedora and Debian.
 
-The install script clone some repositories and install the dependencies.
-
-Fell free to use wherever you want.
-
-Gabriel Melo.
+The install script clone some dependencies and install the plugins on VIM.
